@@ -1,0 +1,65 @@
+@import "Init";
+@import "Variables";
+
+
+#root {
+  height: 100%;
+
+  .app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .selector-wrapper {
+      flex: 1;
+      border: 2px solid #333333;
+      margin-bottom: 20px;
+
+      #selector-title {
+        color: $headersColor;
+        background-color: $headersBackground;
+        padding: 20px 0;
+        font-size: 1.3rem;
+      }
+
+      #layout-selector {
+        padding: 20px 150px;
+        @media (max-width: $tablet-width) {
+          padding: 10px 30px;
+        }
+      }
+    }
+
+    .layouts-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 5;
+      border: 2px solid $bordersColor;
+      border-bottom: 0;
+      height: 100%;
+
+      //Layouts Css
+      .layout {
+        display: flex;
+        border-bottom: 2px solid $bordersColor;
+        justify-content: center;
+        align-items: center;
+
+        &.xl {
+          flex: 5;
+          background-color: #8dfcf8;
+        }
+
+        &.l {
+          flex: 3;
+          background-color: burlywood;
+        }
+
+        &.sm {
+          flex: 1;
+          background-color: darkorchid;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Layout from './Layout';
+
 import '../scss/App.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import Materialize from 'materialize-css';
@@ -46,6 +48,8 @@ class App extends Component {
                         </select>
                     </div>
                 </div>
+                {/* send the layout that user select's to the Layout component via Props  */}
+                <Layout layoutType={this.state.layoutValue}/>
             </div>
         )
     }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Layout from './Layout';
 
-import '../scss/App.css';
+import '../scss/App.scss';
 import 'materialize-css/dist/css/materialize.min.css';
 import Materialize from 'materialize-css';
 

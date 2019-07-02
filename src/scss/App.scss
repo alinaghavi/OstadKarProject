@@ -33,31 +33,38 @@
     .layouts-wrapper {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       flex: 5;
       border: 2px solid $bordersColor;
       border-bottom: 0;
       height: 100%;
-
+      //sm layouts should be next to each other
+      .sm-wrapper {
+        background-color: darkorchid;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        flex:1;
+        .layout{
+          width:50%;
+          border-left: 2px solid $bordersColor;
+        }
+      }
       //Layouts Css
       .layout {
         display: flex;
         border-bottom: 2px solid $bordersColor;
         justify-content: center;
         align-items: center;
-
+        width: 100%;
         &.xl {
-          flex: 5;
           background-color: #8dfcf8;
+          flex: 2;
         }
 
         &.l {
-          flex: 3;
           background-color: burlywood;
-        }
-
-        &.sm {
           flex: 1;
-          background-color: darkorchid;
         }
       }
     }

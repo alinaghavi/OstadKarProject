@@ -43,8 +43,8 @@ class App extends Component {
                             <option value="4l">4L</option>
                             <option value="xl/2l">XL/2L</option>
                             <option value="xl/l/2sm">XL/L/2SM</option>
-                            <option value="2xl/4l/3sm">2XL/4L/3SM</option>
-                            <option value="xl/l/5sm">XL/L/5SM</option>
+                            <option value="2xl/4l/4sm">2XL/4L/4SM</option>
+                            <option value="xl/l/6sm">XL/L/6SM</option>
                         </select>
                     </div>
                 </div>

@@ -18,7 +18,15 @@ const Layout = ({layoutType}) => {
             </div>)
         }
         //We'll Style this layouts base on their class
-        return layoutItem
+        if (stringPart === 'sm') {
+            return (
+                <div className='sm-wrapper' key={Math.random()}>
+                    {layoutItem}
+                </div>
+            )
+        } else {
+            return layoutItem
+        }
     });
 
     return (
